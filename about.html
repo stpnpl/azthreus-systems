@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Azthreus Systems — our mission, vision, core values, and organizational structure.">
+  <title>About — Azthreus Systems</title>
+  <link rel="icon" href="logo-v2.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .leader-card {
+      background: rgba(65,76,107,0.2);
+      border: 1px solid rgba(65,76,107,0.35);
+      border-radius: 10px;
+      padding: 28px 24px;
+      transition: all 0.25s ease;
+    }
+    .leader-card:hover {
+      border-color: rgba(83,147,148,0.35);
+      transform: translateY(-3px);
+    }
+    .leader-role {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--teal);
+      margin-bottom: 6px;
+    }
+    .leader-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .leader-scope {
+      font-size: 0.8rem;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--teal), rgba(83,147,148,0.1));
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--teal);
+      border: 2px solid #0a0f18;
+      box-shadow: 0 0 8px var(--teal);
+    }
+    .timeline-item h4 {
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .timeline-item p {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    .value-detail-card {
+      background: rgba(65,76,107,0.15);
+      border: 1px solid rgba(65,76,107,0.3);
+      border-radius: 10px;
+      padding: 32px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      transition: all 0.25s ease;
+    }
+    .value-detail-card:hover {
+      border-color: rgba(83,147,148,0.3);
+    }
+    .value-icon-lg {
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      background: rgba(83,147,148,0.1);
+      border: 1px solid rgba(83,147,148,0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .value-detail-card h3 {
+      font-size: 1.1rem;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .value-detail-card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    .org-box {
+      background: rgba(10,15,24,0.7);
+      border: 1px solid rgba(56,80,108,0.35);
+      border-radius: 8px;
+      padding: 14px 20px;
+      font-size: 0.85rem;
+      color: var(--sand);
+      text-align: center;
+    }
+    .org-box.highlight {
+      border-color: var(--teal);
+      color: var(--white);
+      background: rgba(83,147,148,0.1);
+    }
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .org-level {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .org-connector {
+      width: 2px;
+      height: 28px;
+      background: rgba(83,147,148,0.3);
+    }
+    .org-connector-h {
+      height: 2px;
+      background: rgba(83,147,148,0.3);
+      width: 100%;
+      margin: 0 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>About</span>
+      </div>
+      <h1>About Azthreus Systems</h1>
+      <p>We are a deep space engineering company with a 150-year vision: to serve as the foundational digital infrastructure for a multi-planetary civilization.</p>
+    </div>
+  </div>
+
+  <!-- MISSION & VISION -->
+  <section class="section" id="mission">
+    <div class="container">
+      <div class="mission-layout">
+        <div class="mission-text">
+          <div class="section-label">Mission</div>
+          <h2>Architect the Digital Backbone of Humanity's Future</h2>
+          <p>Our mission is to architect fault-tolerant software, quantum computing frameworks, and delay-tolerant networks enabling human expansion into deep space. We engineer resilience, ensure the survival of human knowledge, and bridge vast distances through unparalleled technological precision.</p>
+          <p>This is not a short-term commercial objective. It is a civilizational commitment — one that demands the kind of engineering discipline that produces software capable of running correctly for decades, in environments where failure is measured in lives and lost knowledge.</p>
+        </div>
+        <div>
+          <div class="callout">
+            <p>"Serve as foundational digital infrastructure for a multi-planetary civilization — the universal standard for interstellar software engineering and perpetual archive of digital human heritage over the next 150 years."</p>
+          </div>
+          <div style="background: rgba(65,76,107,0.15); border: 1px solid rgba(65,76,107,0.3); border-radius: 10px; padding: 28px; margin-top: 20px;">
+            <div class="section-label" style="margin-bottom: 12px;">Vision</div>
+            <p style="color: var(--sand); font-size: 0.95rem; line-height: 1.8;">Serve as the foundational digital infrastructure for a multi-planetary civilization — the universal standard for interstellar software engineering and perpetual archive of digital human heritage over the next 150 years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section class="section section--alt" id="values">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Core Values</div>
+        <h2>What We Believe In</h2>
+        <p>Every engineering decision, every line of code, every policy at Azthreus Systems is anchored to four core values that reflect the nature of the work we do.</p>
+      </div>
+
+      <div class="value-detail-card">
+        <div class="value-icon-lg">🔩</div>
+        <div>
+          <h3>Resilience</h3>
+          <p>Software must survive extreme environments and generational timeframes. Resilience is not a feature we add after the fact — it is the architectural constraint from which all design choices flow. Our systems are built to degrade gracefully, recover autonomously, and continue operating when conditions become hostile.</p>
+        </div>
+      </div>
+
+      <div class="value-detail-card">
+        <div class="value-icon-lg">📐</div>
+        <div>
+          <h3>Precision</h3>
+          <p>Mathematically verifiable, fault-tolerant code is the only code we ship. We do not estimate reliability — we measure it. We do not assume correctness — we prove it. From static analysis requirements to mandatory formal gate reviews, precision is operationalized at every stage of our development lifecycle.</p>
+        </div>
+      </div>
+
+      <div class="value-detail-card">
+        <div class="value-icon-lg">🌿</div>
+        <div>
+          <h3>Stewardship</h3>
+          <p>We are entrusted with the long-term protection of human data and human heritage. Data created today may need to be readable in 100 years by humans using technology that does not yet exist. This demands that we treat every archival decision as if it is permanent — because for all practical purposes, it is.</p>
+        </div>
+      </div>
+
+      <div class="value-detail-card">
+        <div class="value-icon-lg">🚀</div>
+        <div>
+          <h3>Exploration</h3>
+          <p>We are at the frontier of quantum computing, interstellar algorithm design, and delay-tolerant networking. Advancing these fields requires intellectual courage — the willingness to pursue research paths that may not succeed on the first iteration, to publish findings that invite scrutiny, and to contribute to open standards that outlast any individual organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIZATIONAL STRUCTURE -->
+  <section class="section" id="structure">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Organization</div>
+        <h2>A Flat Technical Hierarchy</h2>
+        <p>Azthreus Systems is structured to minimize bureaucratic overhead while preserving clear accountability for safety, security, and technical quality.</p>
+      </div>
+
+      <div style="max-width: 860px; margin: 0 auto;">
+        <!-- Exec Board -->
+        <div class="org-chart" style="margin-bottom: 40px;">
+          <div class="org-box highlight" style="width: 240px;">Executive Board</div>
+          <div class="org-connector"></div>
+          <div class="org-box highlight" style="width: 200px;">Chief Executive Officer</div>
+          <div class="org-connector"></div>
+          <!-- C-Suite Row -->
+          <div class="org-level" style="gap: 12px;">
+            <div style="flex: 1; min-width: 160px; max-width: 200px;">
+              <div class="org-box" style="margin-bottom: 0;">
+                <div style="font-size:0.7rem; color: var(--teal); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">CTO</div>
+                Systems Architecture<br>Quantum Engineering<br>Deep Space Comms<br>Radiation Hardening
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 160px; max-width: 200px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--teal); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">CISO</div>
+                Info Security<br>CIRT
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 160px; max-width: 200px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--teal); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">COO</div>
+                Mission Operations<br>Infrastructure<br>Supply Chain
+              </div>
+            </div>
+          </div>
+          <div style="height: 28px;"></div>
+          <!-- Staff Row -->
+          <div class="org-level" style="gap: 12px;">
+            <div style="flex: 1; min-width: 140px; max-width: 170px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--sand); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">HR Director</div>
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 140px; max-width: 170px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--sand); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Quality Manager</div>
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 140px; max-width: 170px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--sand); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Legal &amp; Compliance</div>
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 140px; max-width: 170px;">
+              <div class="org-box">
+                <div style="font-size:0.7rem; color: var(--sand); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:4px;">Finance Officer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Leadership</div>
+        <h2>Executive Team</h2>
+        <p>Each executive at Azthreus Systems owns both a technical domain and the accountability for its performance over the long term.</p>
+      </div>
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-role">Chief Executive Officer</div>
+          <div class="leader-title">CEO</div>
+          <p class="leader-scope">Company strategy, external communications, government relations, crisis communications, and final authority on major commitments.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Chief Technology Officer</div>
+          <div class="leader-title">CTO</div>
+          <p class="leader-scope">Systems architecture, quantum engineering, deep space communications, radiation hardening &amp; OS. Engineering Lead oversight and AI governance authority.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Chief Information Security Officer</div>
+          <div class="leader-title">CISO</div>
+          <p class="leader-scope">Information security policy, CIRT leadership, data classification oversight, PQC key management, and security incident response.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Chief Operating Officer</div>
+          <div class="leader-title">COO</div>
+          <p class="leader-scope">Mission operations, infrastructure, supply chain, enterprise risk ownership, and operational continuity across both jurisdictions.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">HR Director</div>
+          <div class="leader-title">HR Director</div>
+          <p class="leader-scope">Talent acquisition, onboarding, performance management, leave administration, and employee relations across the Philippines and United States.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Legal &amp; Compliance Officer</div>
+          <div class="leader-title">Legal Officer</div>
+          <p class="leader-scope">IP ownership, patent strategy, ITAR/EAR compliance, open source license governance, data subject rights, and export control.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Finance &amp; Stewardship Officer</div>
+          <div class="leader-title">Finance Officer</div>
+          <p class="leader-scope">Financial operations, expense governance, budget management, and stewardship of company resources across both jurisdictions.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-role">Quality Manager</div>
+          <div class="leader-title">Quality Manager</div>
+          <p class="leader-scope">Quality assurance plans, gate review oversight, Definition of Done enforcement, and post-gate action item verification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPERATING PRINCIPLES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">How We Work</div>
+        <h2>Operating Principles</h2>
+        <p>Azthreus Systems runs on a set of operational principles that translate our values into day-to-day engineering practice.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Accuracy Over Speed</h4>
+          <p>We never race to be first. All communications — internal and external — must be correct before they are shared. A wrong announcement in a mission-critical context has consequences that cannot be reversed.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Architecture Before Code</h4>
+          <p>No project begins engineering work without an approved Charter. Every major technical decision is captured in an Architecture Decision Record (ADR) with context, options considered, and rationale. ADRs are never deleted — they are the organizational memory of why we built what we built.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Safety Reporting is Non-Optional</h4>
+          <p>Any condition that could compromise mission safety or human life must be reported. This is not optional, and reporter identity is protected. Retaliation against safety reporters is itself a serious disciplinary matter.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>No "Can't Happen" Errors</h4>
+          <p>In radiation environments, any error can happen. Every error path must be handled explicitly. Error codes are named constants, never magic numbers. Error paths are tested as thoroughly as success paths.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Human Override is Sacred</h4>
+          <p>No autonomous AI system at Azthreus may resist or circumvent human override. The kill-switch is treated with the same priority as the primary functional requirement. Any design that makes override harder requires CTO approval and documented justification.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Transparency With Responsibility</h4>
+          <p>We publish research, contribute to open standards, and engage openly with the scientific community. But transparency must be balanced with export control compliance, protection of safety-critical trade secrets, and the operational security of active missions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JURISDICTIONS -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Where We Operate</div>
+        <h2>Global Operations</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
+        <div style="background: rgba(65,76,107,0.15); border: 1px solid rgba(65,76,107,0.3); border-radius: 10px; padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 12px;">🇵🇭</div>
+          <h3 style="color: var(--white); margin-bottom: 10px;">Republic of the Philippines</h3>
+          <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.7;">Primary engineering hub. Operations governed by Philippine Labor Code, RA 10173 (Data Privacy Act), RA 10175 (Cybercrime Prevention Act), and applicable NPC/DICT regulations.</p>
+        </div>
+        <div style="background: rgba(65,76,107,0.15); border: 1px solid rgba(65,76,107,0.3); border-radius: 10px; padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 12px;">🇺🇸</div>
+          <h3 style="color: var(--white); margin-bottom: 10px;">United States of America</h3>
+          <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.7;">Regulated operations under ITAR (22 CFR Parts 120-130), EAR (15 CFR Parts 730-774), CFAA, NIST CSF 2.0, and applicable state laws. Export control compliance is a top-priority obligation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="nav.js"></script>
+</body>
+</html>

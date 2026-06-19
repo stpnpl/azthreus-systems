@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Azthreus Systems — reach out to our engineering team, request a consulting engagement, or inquire about our products.">
+  <title>Contact — Azthreus Systems</title>
+  <link rel="icon" href="logo-v2.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-note {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 6px;
+    }
+    .spokesperson-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .spokesperson-card {
+      background: rgba(65,76,107,0.15);
+      border: 1px solid rgba(65,76,107,0.3);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .spokesperson-card .topic {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--teal);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .spokesperson-card .role {
+      font-size: 0.88rem;
+      color: var(--white);
+      font-weight: 600;
+    }
+    .form-submit-note {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+    .success-msg {
+      display: none;
+      background: rgba(83,147,148,0.12);
+      border: 1px solid rgba(83,147,148,0.3);
+      border-radius: 8px;
+      padding: 20px 24px;
+      color: var(--teal);
+      font-size: 0.9rem;
+      margin-top: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Whether you're exploring a partnership, evaluating our products, or requesting a consulting engagement — we respond to every serious inquiry.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <div class="section-label">Contact Information</div>
+          <h2>How to Reach Azthreus Systems</h2>
+          <p>All external media inquiries are directed to the CEO. Technical inquiries are routed to the CTO or Engineering Lead. We aim to respond to all substantive inquiries within 4 business hours.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🏢</div>
+            <div class="contact-detail-text">
+              <div class="label">Headquarters</div>
+              <div class="value">Republic of the Philippines</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🇺🇸</div>
+            <div class="contact-detail-text">
+              <div class="label">US Operations</div>
+              <div class="value">United States of America</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">⏱️</div>
+            <div class="contact-detail-text">
+              <div class="label">Response Time</div>
+              <div class="value">4 business hours (media), 2 business days (general)</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🔐</div>
+            <div class="contact-detail-text">
+              <div class="label">Security / CIRT</div>
+              <div class="value">24/7 CIRT Hotline available for security incidents</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 36px;">
+            <div class="section-label">Spokesperson Directory</div>
+            <p style="color: var(--gray); font-size: 0.88rem; margin-bottom: 0;">All inquiries are routed to the appropriate spokesperson by topic. Non-spokespeople receiving external inquiries are required to defer and forward immediately.</p>
+
+            <div class="spokesperson-grid">
+              <div class="spokesperson-card">
+                <div class="topic">Strategy / Media</div>
+                <div class="role">CEO</div>
+              </div>
+              <div class="spokesperson-card">
+                <div class="topic">Technology / Engineering</div>
+                <div class="role">CTO</div>
+              </div>
+              <div class="spokesperson-card">
+                <div class="topic">Security / Cybersecurity</div>
+                <div class="role">CISO</div>
+              </div>
+              <div class="spokesperson-card">
+                <div class="topic">Legal / Regulatory</div>
+                <div class="role">Legal Officer</div>
+              </div>
+              <div class="spokesperson-card">
+                <div class="topic">Financial</div>
+                <div class="role">Finance Officer</div>
+              </div>
+              <div class="spokesperson-card">
+                <div class="topic">Mission Operations</div>
+                <div class="role">COO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div>
+          <div class="contact-form">
+            <div class="section-label" style="margin-bottom: 20px;">Send a Message</div>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization" placeholder="Your organization or agency">
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryType">Inquiry Type</label>
+                <select id="inquiryType" name="inquiryType" required>
+                  <option value="" disabled selected>Select an inquiry type</option>
+                  <option value="product">Product Information</option>
+                  <option value="consulting">Consulting Engagement</option>
+                  <option value="partnership">Partnership / Joint Development</option>
+                  <option value="media">Media Inquiry</option>
+                  <option value="research">Research / Academic Collaboration</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Brief description of your inquiry" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Please describe your inquiry in detail. For consulting engagements, include the nature of the project, timeline, and any relevant constraints." required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label style="display: flex; align-items: flex-start; gap: 10px; text-transform: none; letter-spacing: 0; font-weight: normal; font-size: 0.82rem; color: var(--gray); cursor: pointer;">
+                  <input type="checkbox" required style="width: auto; margin-top: 2px; flex-shrink: 0; accent-color: var(--teal);">
+                  I understand that Azthreus Systems handles all data in accordance with applicable privacy laws (RA 10173 / CCPA). I consent to my information being used to respond to this inquiry.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.95rem;">
+                Send Message
+              </button>
+
+              <div class="success-msg" id="successMsg">
+                ✓ Your message has been received. We will route it to the appropriate spokesperson and respond within the stated timeframe. Thank you.
+              </div>
+
+              <p class="form-submit-note">
+                This form is for general inquiries only. Security incidents should be reported to the CIRT Hotline (24/7). ITAR/EAR-controlled information must not be transmitted through this form.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMS PRINCIPLES -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Communications Policy</div>
+        <h2>Our External Communications Principles</h2>
+        <p>Azthreus Systems applies a strict set of principles to all external communications to maintain accuracy, consistency, and trust.</p>
+      </div>
+      <div class="services-list">
+        <div class="service-item">
+          <div class="service-num">01</div>
+          <div>
+            <h3>Accuracy Above Speed</h3>
+            <p>We never race to be first with information. We take the time to verify before we communicate. Inaccurate information in a mission context is more damaging than delayed information.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">02</div>
+          <div>
+            <h3>One Consistent Voice</h3>
+            <p>All communications must reflect the same understanding of our mission and capabilities. Multiple contradictory positions damage credibility and could cause mission partners to lose confidence in our work.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-num">03</div>
+          <div>
+            <h3>Transparency Without Recklessness</h3>
+            <p>We publish research, contribute to open standards, and engage openly — but always with respect for export control obligations, privacy requirements, competitive confidentiality, and mission safety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('contactForm').querySelector('button[type=submit]').disabled = true;
+      document.getElementById('contactForm').querySelector('button[type=submit]').textContent = 'Message Sent';
+    }
+  </script>
+
+  <script src="nav.js"></script>
+</body>
+</html>

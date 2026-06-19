@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Azthreus Systems Products — DTN Suite, Quantum-Resistant Cryptographic Core, RhAOS, and the Humanity Archive Platform.">
+  <title>Products — Azthreus Systems</title>
+  <link rel="icon" href="logo-v2.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-detail {
+      background: linear-gradient(145deg, rgba(65,76,107,0.2), rgba(56,80,108,0.1));
+      border: 1px solid rgba(83,147,148,0.15);
+      border-radius: 12px;
+      padding: 52px;
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 56px;
+      align-items: start;
+      transition: border-color 0.25s ease;
+    }
+    .product-detail:hover {
+      border-color: rgba(83,147,148,0.3);
+    }
+    .product-detail-left .icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .product-detail-left h2 {
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .product-detail-left .product-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terra);
+      background: rgba(156,122,101,0.12);
+      border: 1px solid rgba(156,122,101,0.25);
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .product-detail-left .product-tag.teal {
+      color: var(--teal);
+      background: rgba(83,147,148,0.1);
+      border-color: rgba(83,147,148,0.25);
+    }
+    .product-detail-left p {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    .product-detail-right h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--sand);
+      margin-bottom: 12px;
+      margin-top: 28px;
+    }
+    .product-detail-right h3:first-child { margin-top: 0; }
+    .product-detail-right p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.75;
+    }
+    .feature-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .feature-list li::before {
+      content: '→';
+      color: var(--teal);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .spec-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 8px;
+      align-items: baseline;
+    }
+    .spec-key {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--teal);
+      min-width: 110px;
+      flex-shrink: 0;
+    }
+    .spec-val {
+      font-size: 0.88rem;
+      color: var(--sand);
+    }
+    @media (max-width: 800px) {
+      .product-detail {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Products</span>
+      </div>
+      <h1>Our Products</h1>
+      <p>Four foundational platforms engineered for the most demanding operating environments in the known universe — from Earth's data centers to the interplanetary void.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- DTN Suite -->
+      <div class="product-detail" id="dtn">
+        <div class="product-detail-left">
+          <span class="icon">📡</span>
+          <div class="product-tag">Deep Space Comms</div>
+          <h2>DTN Suite</h2>
+          <p>Delay-Tolerant Networking for the interplanetary age. Our DTN Suite implements the Bundle Protocol standard with the reliability and determinism required for spacecraft operations where round-trip signal times span minutes or hours.</p>
+        </div>
+        <div class="product-detail-right">
+          <h3>Overview</h3>
+          <p>Built on RFC 5050 (Bundle Protocol), the DTN Suite implements store-and-forward messaging that allows nodes to accumulate data during communication blackouts and forward it opportunistically when contact windows reopen. The C-based ION (Interplanetary Overlay Network) implementation uses zero dynamic memory allocation — a hard requirement for radiation-hardened flight environments.</p>
+
+          <h3>Key Capabilities</h3>
+          <ul class="feature-list">
+            <li>Store-and-forward message custody across multi-hop interplanetary paths</li>
+            <li>Deterministic scheduling of contact windows with CFDP (CCSDS File Delivery Protocol) support</li>
+            <li>Zero dynamic memory allocation — all static or pool allocation for flight safety</li>
+            <li>Blackout-resilient operation with automatic retransmission on re-contact</li>
+            <li>Custody transfer for guaranteed delivery across unreliable long-delay links</li>
+          </ul>
+
+          <h3>Technical Specifications</h3>
+          <div class="spec-row"><span class="spec-key">Standard</span><span class="spec-val">RFC 5050 Bundle Protocol v7 + CFDP</span></div>
+          <div class="spec-row"><span class="spec-key">Implementation</span><span class="spec-val">C (MISRA C:2012), ION-based</span></div>
+          <div class="spec-row"><span class="spec-key">Memory Model</span><span class="spec-val">Zero dynamic allocation; static + pool only</span></div>
+          <div class="spec-row"><span class="spec-key">Certification</span><span class="spec-val">NASA NPR 7150.2D IV&V compatible</span></div>
+        </div>
+      </div>
+
+      <!-- QRC -->
+      <div class="product-detail" id="qrc">
+        <div class="product-detail-left">
+          <span class="icon">🔐</span>
+          <div class="product-tag teal">Cryptography</div>
+          <h2>Quantum-Resistant Cryptographic Core</h2>
+          <p>Future-proof cryptographic infrastructure based on NIST-standardized post-quantum algorithms, protecting mission-critical communications against the threat of large-scale quantum computers.</p>
+        </div>
+        <div class="product-detail-right">
+          <h3>Overview</h3>
+          <p>Classical cryptographic algorithms — RSA, ECDSA, Diffie-Hellman — are vulnerable to Shor's algorithm running on a sufficiently powerful quantum computer. The Quantum-Resistant Cryptographic Core implements ML-KEM (CRYSTALS-Kyber) for key encapsulation and ML-DSA (CRYSTALS-Dilithium) for digital signatures, both finalized NIST PQC standards. Designed for interstellar communications, telemetry authentication, and command uplink integrity with no managed runtimes and minimal side-channel attack surface.</p>
+
+          <h3>Key Capabilities</h3>
+          <ul class="feature-list">
+            <li>ML-KEM-1024 key encapsulation for mission-critical key exchange</li>
+            <li>ML-DSA-87 digital signatures for command authentication and telemetry signing</li>
+            <li>Hybrid classical/PQ modes for transitional interoperability</li>
+            <li>Constant-time implementations to resist timing side-channel attacks</li>
+            <li>HSM-integrated key ceremony support and Shamir Secret Sharing key management</li>
+          </ul>
+
+          <h3>Technical Specifications</h3>
+          <div class="spec-row"><span class="spec-key">KEM</span><span class="spec-val">ML-KEM-1024 (CRYSTALS-Kyber)</span></div>
+          <div class="spec-row"><span class="spec-key">Signature</span><span class="spec-val">ML-DSA-87 (CRYSTALS-Dilithium)</span></div>
+          <div class="spec-row"><span class="spec-key">Language</span><span class="spec-val">C, Rust — no managed runtimes</span></div>
+          <div class="spec-row"><span class="spec-key">Target</span><span class="spec-val">Flight comms, ground stations, archival</span></div>
+        </div>
+      </div>
+
+      <!-- RhAOS -->
+      <div class="product-detail" id="rhaos">
+        <div class="product-detail-left">
+          <span class="icon">🛡️</span>
+          <div class="product-tag">Flight OS</div>
+          <h2>RhAOS</h2>
+          <p>Radiation-Hardened Autonomous Operating System — engineered to survive the cosmic radiation environment of deep space, where a single bit flip can cascade into mission failure.</p>
+        </div>
+        <div class="product-detail-right">
+          <h3>Overview</h3>
+          <p>Cosmic ray interactions with silicon can flip bits, corrupt memory, and send processors into undefined states. RhAOS addresses this threat at every level: Triple Modular Redundancy (TMR) at the computational unit level, majority-voting logic that resolves disagreements between redundant components, and continuous self-scrubbing memory that corrects single-event upsets (SEUs) before they accumulate into multi-bit errors. The result is an OS that gracefully handles radiation environments that would halt conventional systems.</p>
+
+          <h3>Key Capabilities</h3>
+          <ul class="feature-list">
+            <li>Triple Modular Redundancy (TMR) with majority-voting at every safety-critical computation</li>
+            <li>Continuous memory scrubbing to correct single-event upsets from cosmic radiation</li>
+            <li>Provably bounded stack depths — recursion prohibited in flight paths</li>
+            <li>FDIR (Fault Detection, Isolation, and Recovery) subsystem with documented state machine</li>
+            <li>No dynamic memory allocation in flight code paths; all loops have provable termination</li>
+            <li>Hardware Abstraction Layer (HAL) fully isolated from mission application logic</li>
+          </ul>
+
+          <h3>Technical Specifications</h3>
+          <div class="spec-row"><span class="spec-key">Architecture</span><span class="spec-val">TMR + majority voting + memory scrubbing</span></div>
+          <div class="spec-row"><span class="spec-key">Language</span><span class="spec-val">C (MISRA C:2012), Rust for critical modules</span></div>
+          <div class="spec-row"><span class="spec-key">Compliance</span><span class="spec-val">NASA NPR 7150.2D, DO-178C analogues</span></div>
+          <div class="spec-row"><span class="spec-key">Memory</span><span class="spec-val">Static allocation only; zero GC</span></div>
+        </div>
+      </div>
+
+      <!-- HAP -->
+      <div class="product-detail" id="hap">
+        <div class="product-detail-left">
+          <span class="icon">🗄️</span>
+          <div class="product-tag teal">Long-Term Preservation</div>
+          <h2>Humanity Archive Platform</h2>
+          <p>A digital preservation system built on geological timescales — OAIS-compliant infrastructure designed to ensure human knowledge remains readable and intact for 100+ years.</p>
+        </div>
+        <div class="product-detail-right">
+          <h3>Overview</h3>
+          <p>Inspired by the Svalbard Seed Vault and the GitHub Arctic Code Vault, the Humanity Archive Platform addresses the fundamental archival challenge: formats become obsolete, media degrades, and institutions fail. Our OAIS (ISO 14721)-compliant platform combines automated bitstream preservation, format migration pipelines, and software emulation to ensure that content deposited today remains accessible to readers a century from now — regardless of what changes in the computing landscape.</p>
+
+          <h3>Key Capabilities</h3>
+          <ul class="feature-list">
+            <li>OAIS (ISO 14721) reference model compliance for multi-generational preservation</li>
+            <li>Automated bitstream fixity checking with cryptographic checksums and redundancy mapping</li>
+            <li>Format migration pipeline — automated transformation as formats become obsolete</li>
+            <li>Software emulation layer for 100+ year readability without original software</li>
+            <li>Extensive metadata registries capturing provenance, technical constraints, and transformation history</li>
+            <li>ML-DSA-87 + SHA-384 signing for long-term archive integrity verification</li>
+          </ul>
+
+          <h3>Technical Specifications</h3>
+          <div class="spec-row"><span class="spec-key">Standard</span><span class="spec-val">OAIS ISO 14721 (Open Archival Info System)</span></div>
+          <div class="spec-row"><span class="spec-key">Integrity</span><span class="spec-val">ML-DSA-87 + SHA-384 archival signing</span></div>
+          <div class="spec-row"><span class="spec-key">Key Rotation</span><span class="spec-val">Decennial (10-year archive key lifecycle)</span></div>
+          <div class="spec-row"><span class="spec-key">Design Life</span><span class="spec-val">100+ year operational horizon</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--alt" style="text-align: center;">
+    <div class="container" style="max-width: 680px;">
+      <div class="section-label">Get Started</div>
+      <h2>Interested in Our Products?</h2>
+      <p style="color: var(--sand); margin: 1rem 0 2rem;">Contact our engineering team to discuss how Azthreus Systems products can integrate into your mission architecture.</p>
+      <a href="contact.html" class="btn btn-primary">Talk to Our Engineers</a>
+    </div>
+  </section>
+
+  <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Azthreus Systems Services — Interstellar software architecture consulting, mission-critical V&V, and deep space AI governance.">
+  <title>Services — Azthreus Systems</title>
+  <link rel="icon" href="logo-v2.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-detail {
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+      border-bottom: 1px solid rgba(65,76,107,0.3);
+    }
+    .service-detail:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .service-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+    .service-icon-lg {
+      width: 72px;
+      height: 72px;
+      border-radius: 14px;
+      background: rgba(83,147,148,0.12);
+      border: 1px solid rgba(83,147,148,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .service-header-text h2 {
+      font-size: 1.8rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .service-header-text .service-sub {
+      font-size: 0.85rem;
+      color: var(--teal);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .service-body {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .service-body p {
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1.1rem;
+    }
+    .service-body p:last-child { margin-bottom: 0; }
+    .service-sidebar h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--sand);
+      margin-bottom: 14px;
+      margin-top: 28px;
+    }
+    .service-sidebar h4:first-child { margin-top: 0; }
+    .capability-pill {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--white);
+      background: rgba(56,80,108,0.35);
+      border: 1px solid rgba(56,80,108,0.5);
+      border-radius: 4px;
+      padding: 5px 11px;
+      margin: 3px 3px 3px 0;
+      letter-spacing: 0.02em;
+    }
+    .check-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+    .check-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.88rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .check-list li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    @media (max-width: 780px) {
+      .service-body {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .service-header {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Services</span>
+      </div>
+      <h1>Our Services</h1>
+      <p>Specialized engineering consulting and validation services, applying aerospace-grade rigor to the world's most demanding software challenges.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Service 1: Architecture Consulting -->
+      <div class="service-detail" id="consulting">
+        <div class="service-header">
+          <div class="service-icon-lg">🛰️</div>
+          <div class="service-header-text">
+            <div class="service-sub">Service 01</div>
+            <h2>Interstellar Software Architecture Consulting</h2>
+          </div>
+        </div>
+        <div class="service-body">
+          <div>
+            <p>Designing software for deep space is categorically different from terrestrial engineering. Round-trip communication delays measured in minutes or hours, cosmic radiation that corrupts memory at random, century-scale operational lifetimes, and a near-total inability to patch deployed systems demand architectural choices that cannot be made intuitively.</p>
+            <p>Azthreus Systems brings deep expertise in hybrid quantum-classical architecture, delay-tolerant network design, and radiation-hardened systems engineering to organizations navigating these constraints. Whether you are designing a new spacecraft flight stack, building ground control infrastructure, or planning a multi-planetary communications relay — we help you make the right architectural decisions before the first line of code is written.</p>
+            <p>Our consulting engagements follow the Azthreus hybrid framework: agile iterative development combined with formal aerospace gate reviews (PDR, CDR, TRR, FRR), Architecture Decision Records (ADRs) for every major technical choice, and rigorous requirements traceability from system-level objectives to individual modules.</p>
+          </div>
+          <div class="service-sidebar">
+            <h4>Domains</h4>
+            <span class="capability-pill">DTN Network Design</span>
+            <span class="capability-pill">Quantum-Classical Hybrid</span>
+            <span class="capability-pill">Radiation Hardening Strategy</span>
+            <span class="capability-pill">FDIR Architecture</span>
+            <span class="capability-pill">Layered Space SW Architecture</span>
+            <span class="capability-pill">PQC Migration Planning</span>
+            <span class="capability-pill">SBOM & Supply Chain</span>
+            <span class="capability-pill">Configuration Management</span>
+
+            <h4>Deliverables</h4>
+            <ul class="check-list">
+              <li>Architecture Decision Records (ADRs) for all major decisions</li>
+              <li>System architecture block diagrams with interface catalogs</li>
+              <li>Technology selection rationale with trade-off analysis</li>
+              <li>Software Development Plan (SDP) aligned to your gate schedule</li>
+              <li>Risk Register with categorized likelihood/impact scoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: V&V -->
+      <div class="service-detail" id="vv">
+        <div class="service-header">
+          <div class="service-icon-lg">🔬</div>
+          <div class="service-header-text">
+            <div class="service-sub">Service 02</div>
+            <h2>Mission-Critical Verification &amp; Validation</h2>
+          </div>
+        </div>
+        <div class="service-body">
+          <div>
+            <p>For safety-critical space software, testing cannot be an afterthought — it must be designed into the development lifecycle from the earliest phases. Independent Verification and Validation (IV&V) per NASA NPR 7150.2D is the gold standard for ensuring that flight software does what it is specified to do, and nothing more.</p>
+            <p>Azthreus Systems provides fully independent V&V teams — engineers who had no role in the development of the software under review. This independence is mandatory for Class A (Mission-Critical) software and ensures that the validation is not contaminated by the assumptions and blind spots of the development team.</p>
+            <p>Our V&V process includes formal gate reviews (PDR, CDR, TRR, FRR) with mandatory exit criteria, hardware-in-the-loop testing where applicable, adversarial and out-of-distribution test case design, FDIR validation across all documented failure modes, and static analysis using MISRA C:2012, Clippy, SonarQube, and Coverity with zero tolerance for unresolved High or Critical findings at TRR.</p>
+
+            <div class="callout" style="margin-top: 28px; margin-bottom: 0;">
+              <p>"A model or system that produces wrong outputs 5% of the time is not acceptable when those outputs govern docking maneuvers, life-support adjustment, or emergency habitat pressure."</p>
+            </div>
+          </div>
+          <div class="service-sidebar">
+            <h4>V&V Coverage</h4>
+            <span class="capability-pill">Unit Testing</span>
+            <span class="capability-pill">Integration Testing</span>
+            <span class="capability-pill">System Testing</span>
+            <span class="capability-pill">Hardware-in-the-Loop</span>
+            <span class="capability-pill">Fault Injection</span>
+            <span class="capability-pill">FDIR Validation</span>
+            <span class="capability-pill">Adversarial Testing</span>
+            <span class="capability-pill">Static Analysis</span>
+            <span class="capability-pill">CVE / SBOM Scanning</span>
+
+            <h4>Gate Reviews</h4>
+            <ul class="check-list">
+              <li>PDR — Architecture & requirements baseline</li>
+              <li>CDR — Detailed design with interface sign-off</li>
+              <li>TRR — Code complete, zero critical static analysis findings</li>
+              <li>FRR — Full test suite pass, mission simulation, kill-switch verified</li>
+            </ul>
+
+            <h4>Standards</h4>
+            <ul class="check-list">
+              <li>NASA NPR 7150.2D</li>
+              <li>MISRA C:2012 mandatory ruleset</li>
+              <li>OWASP Top 10 / CWE Top 25</li>
+              <li>NIST SP 800-53</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: AI Governance -->
+      <div class="service-detail" id="ai">
+        <div class="service-header">
+          <div class="service-icon-lg">🤖</div>
+          <div class="service-header-text">
+            <div class="service-sub">Service 03</div>
+            <h2>Deep Space AI &amp; Automated Governance</h2>
+          </div>
+        </div>
+        <div class="service-body">
+          <div>
+            <p>Autonomous AI systems in space are not optional — communication delays make human-in-the-loop decision-making impossible for time-critical events. Autonomous docking, life-support management, habitat pressure control, and emergency response must all be handled by onboard intelligence that performs correctly every time.</p>
+            <p>Azthreus Systems designs, validates, and governs AI systems across four Risk Tiers: T1 (Autonomous Mission-Critical, no human approval required), T2 (Human-Supervised Mission-Relevant), T3 (Operational Support), and T4 (Research/Experimental). Each tier carries corresponding requirements for independent IV&V, explainability, bias auditing, and the operational kill-switch that is mandatory for all T1 systems.</p>
+            <p>Our Ethical AI Review Board (EARB) — composed of technical AI experts, ethicists, legal representatives, and mission operations personnel — reviews every T1 and T2 system before deployment. This is not a checkbox. The EARB has authority to block deployment, require additional testing, and escalate unresolved ethical concerns to the Executive Board.</p>
+            <p>We also design the governance structures your organization needs: algorithmic transparency reports, bias audit programs, human override mechanisms that cannot be circumvented, and monitoring dashboards that detect performance drift before it becomes a mission risk.</p>
+          </div>
+          <div class="service-sidebar">
+            <h4>AI Risk Tiers</h4>
+            <ul class="check-list">
+              <li><strong style="color:var(--white)">T1 — Autonomous Mission-Critical:</strong> Full IV&V, FRR gate, kill-switch mandatory</li>
+              <li><strong style="color:var(--white)">T2 — Human-Supervised:</strong> CDR + TRR, explainability required, human override</li>
+              <li><strong style="color:var(--white)">T3 — Operational Support:</strong> Standard quality + bias audit pre-deployment</li>
+              <li><strong style="color:var(--white)">T4 — Research:</strong> Documentation only; reclassify before deployment</li>
+            </ul>
+
+            <h4>Governance Capabilities</h4>
+            <span class="capability-pill">Bias Audit Programs</span>
+            <span class="capability-pill">Explainability Design</span>
+            <span class="capability-pill">EARB Facilitation</span>
+            <span class="capability-pill">Kill-Switch Integration</span>
+            <span class="capability-pill">Drift Monitoring</span>
+            <span class="capability-pill">Algorithmic Transparency</span>
+            <span class="capability-pill">AI System Registry</span>
+            <span class="capability-pill">Data Provenance</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--alt" style="text-align: center;">
+    <div class="container" style="max-width: 680px;">
+      <div class="section-label">Engage Us</div>
+      <h2>Let's Solve Your Mission Engineering Challenge</h2>
+      <p style="color: var(--sand); margin: 1rem 0 2rem;">From early architecture reviews to full IV&V campaigns and AI governance frameworks — our engineers are ready to support your mission.</p>
+      <a href="contact.html" class="btn btn-primary">Request an Engagement</a>
+    </div>
+  </section>
+
+  <script src="nav.js"></script>
+</body>
+</html>
