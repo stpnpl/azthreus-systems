@@ -10,4 +10,4 @@
 
 - MFA requirements, banned authentication methods, and privileged account rules
 
-- Expense approval limits, travel classes, and non-reimbursable items
+- Level 1 to Level 4 data classification handling rules, encryption standards, and disposal methods
