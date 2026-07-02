@@ -10,10 +10,6 @@
 
 - Protocol Omega verification checklist and pilot consequences
 
-- Synaptic rejection symptoms and Neuro-Zeta treatment protocols
-
 - Magnetic Confinement Field failure cascade and black hole prevention procedures
 
 - Genetic effects of temporal shearing from tachyon-neutrino radiation
-
-- Zero-Point Energy Casimir Cavity Array and synthetic Moscovium-299
