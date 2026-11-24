@@ -416,6 +416,16 @@ h1, h2, h3, h4, h5 {
   font-size: 1.5rem;
 }
 
+.product-image {
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.product-icon .product-image {
+  width: 44px;
+  height: 44px;
+}
+
 .product-card h3 {
   font-size: 1.15rem;
   color: var(--white);
