@@ -701,23 +701,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .contact-detail {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
   margin-bottom: 20px;
-}
-
-.contact-detail-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background: rgba(83,147,148,0.12);
-  border: 1px solid rgba(83,147,148,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  flex-shrink: 0;
 }
 
 .contact-detail-text .label {
